@@ -1,0 +1,29 @@
+{
+  "id": 0,
+  "scheduleId": 0,
+  "scheduleUUId": "string",
+  "totalNumberOfSeats": 0,
+  "bookingType": "string",
+  "departureDate": "2022-12-12T13:01:19.803Z",
+  "returnDate": "2022-12-12T13:01:19.803Z",
+  "totalPrice": 0,
+  "bookingDetails": [
+    {
+      "seatNumber": "string",
+      "seatCategory": "string",
+      "status": "string",
+      "passenger": {
+        "firstName": "string",
+        "middleName": "string",
+        "lastName": "string",
+        "gender": "FEMALE",
+        "dateOfBirth": "2022-12-12T13:01:19.803Z",
+        "dateOfBirthEth": "string",
+        "email": "string",
+        "phoneNumber": "string",
+        "fullName": "string"
+      }
+    }
+  ],
+  "roundTrip": true
+}

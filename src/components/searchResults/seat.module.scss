@@ -1,0 +1,66 @@
+@use './src/styles/index' as s;
+
+.seat_container {
+  position: relative;
+  text-align: center;
+  color: white;
+  //width: 50px;
+  //height: 50px;
+  max-width: 4rem;
+  width: 100%;
+
+  //border: 1px solid blueviolet;
+
+  @include s.media-breakpoint-up(lg) {
+    max-width: 3.1rem;
+  }
+
+  @include s.media-breakpoint-up(xxl) {
+    max-width: 3.2rem;
+  }
+
+  &.available {
+    &:hover:not(.selected) {
+      path {
+        fill: #ea8e7d;
+        stroke: #ea8e7d;
+      }
+    }
+  }
+
+  &.selected:not(.reserved) {
+    // classWith not reserved
+    // change the cursor to disabled
+
+    &:hover {
+      path {
+        fill: #e74f00;
+      }
+    }
+
+    .seat_num {
+      color: #e74f00;
+    }
+  }
+
+  &.reserved {
+    // change the cursor to disabled
+    cursor: not-allowed !important;
+    //pointer-events: none;
+    //border: 1px solid red;
+  }
+
+  //border: 1px solid red;
+
+  & :local {
+    .seat_num {
+      position: absolute;
+      top: 10px;
+      left: 8px;
+      //color: gray;
+    }
+
+    .icon {
+    }
+  }
+}

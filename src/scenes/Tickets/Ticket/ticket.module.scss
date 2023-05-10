@@ -1,0 +1,44 @@
+@use '../../../styles/index' as s;
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  //margin-top: 5rem;
+
+  //border: 1px solid red;
+
+  // @include s.margin(top, 10rem);
+  // @include s.padding(bottom, 8rem);
+
+  & :global {
+    .ticket {
+      width: 100%;
+      background-color: whitesmoke;
+      //margin: 2rem;
+      border: 1px solid red;
+      padding: 2rem;
+
+      header {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        //border: 1px solid red;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        border-bottom: 4px solid black;
+      }
+    }
+  }
+
+  & :local {
+    .wrapper {
+    }
+
+    .qrcode {
+      //width: 50rem !important;
+      max-width: 10rem !important;
+    }
+  }
+}

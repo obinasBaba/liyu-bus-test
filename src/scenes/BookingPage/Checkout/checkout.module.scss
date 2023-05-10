@@ -1,0 +1,252 @@
+.cc_container {
+  margin: 3rem auto 5rem;
+  max-width: 60rem;
+  display: flex;
+  flex-flow: column;
+  gap: 1.7rem;
+
+
+  //border: 1px solid red;
+
+  & :global {
+    .MuiStepConnector-lineVertical {
+      border-style: dashed;
+    }
+  }
+
+  & :local {
+    .alert {
+      max-width: 38rem;
+      margin: 0 auto;
+    }
+
+    .hor {
+      border: 1px solid red;
+      display: flex;
+      gap: 3rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .prices {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .route_detail {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      color: black;
+      margin: 1.5rem auto 0;
+      width: 100%;
+      max-width: 60rem;
+      gap: 2rem;
+
+      //border: 1px solid red;
+
+      .divide {
+        width: 2px;
+        height: auto;
+        background-color: #f3a493;
+      }
+
+      .route_detail__item {
+        display: grid;
+        //place-items: center;
+        //max-width: 35rem;
+        width: 100%;
+        background-color: #efefef;
+        padding-bottom: 1.6rem;
+        border-radius: 0.4rem;
+        overflow: hidden;
+
+        //border: 1px solid red;
+
+        header {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          justify-content: space-between;
+          background-color: lightgrey;
+          padding: 1rem 2rem;
+          width: 100%;
+
+          //border: 1px solid yellow;
+        }
+
+        .rd_info_card {
+          position: relative;
+          padding: 0 1rem 0 2rem;
+          //background-color: rgba(255, 107, 27, 0.03);
+          //border: thin solid rgba(255, 107, 27, 0.1);
+          border-radius: 0.5rem;
+          display: flex;
+          flex-flow: column;
+          gap: 1rem;
+          width: 100%;
+          backdrop-filter: blur(2px);
+
+          //border: 1px solid green;
+
+
+          .card_content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1rem;
+            width: 100%;
+            //place-items: center;
+            justify-content: space-between;
+            //justify-items: end;
+
+            // select the second element and add padding
+          }
+
+          .rd_li_btn {
+            padding-left: 0;
+            padding-right: 0;
+
+            &:nth-child(2) {
+              margin-left: auto;
+            }
+
+            &:nth-child(4) {
+              margin-left: auto;
+              //margin-right: 1rem;
+            }
+
+            .rd_li_icon {
+              min-width: 2rem;
+            }
+          }
+        }
+
+        .step_label {
+          //border: 1px solid red;
+
+          .loc_name {
+
+            & > :first-child {
+              width: 30%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+
+          }
+        }
+
+        .tarif {
+          text-align: center;
+          margin: 0 auto auto;
+        }
+
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          gap: 1rem;
+          //border: 1px solid red;
+        }
+
+        .boarding_point {
+          margin-top: 0.5rem;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+
+          & > :first-child {
+            //border: thin solid rgba(255, 107, 27, 0.3);
+            //background-color: rgba(255, 107, 27, 0.1);
+
+            p {
+              letter-spacing: 0.03vmax;
+            }
+
+            span {
+              letter-spacing: initial;
+            }
+          }
+
+          span {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .passenger_detail {
+      //border: 1px solid red;
+      padding: 0.5rem;
+      width: 100%;
+      max-width: 60rem;
+      margin: 0 auto;
+
+      .pd_item {
+        display: flex;
+        flex-flow: column;
+        margin-top: 0.2rem;
+
+        .chips {
+          align-self: flex-start;
+          display: flex;
+          gap: 0.5rem;
+          margin-top: 0.7rem;
+        }
+      }
+
+      .pd_item__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 0.2rem;
+
+        .line {
+          height: 1px;
+          background-color: #f6ddd8;
+          width: 100%;
+          flex: 1;
+        }
+      }
+    }
+
+    .rd_price_detail {
+      margin: 0 auto 0;
+      width: 100%;
+      max-width: 40rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: white;
+
+      display: none;
+
+      //border: 1px solid red;
+
+      .rd_price_card {
+        display: flex;
+        flex-flow: column;
+        gap: 0.5rem;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-color: white;
+        padding: 1rem;
+      }
+
+      .rd_price_card__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid #000;
+
+        & > :last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+}

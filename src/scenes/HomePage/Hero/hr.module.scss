@@ -1,0 +1,299 @@
+@use '../../../styles/index' as s;
+
+.hr_container {
+  position: relative;
+  z-index: 0;
+  min-height: 85vh;
+  color: black;
+  display: grid;
+  place-items: center;
+
+  //border: 1px solid red;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .bg2 {
+    position: absolute;
+    //inset: 0;
+    width: 100%;
+    top: 0;
+    height: 28vmax;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    //border: 1px solid red;
+
+    @include s.media-breakpoint-up(sm){
+      height: 38vmin
+    }
+  }
+
+  //border: 10px solid red;
+
+  & :local {
+    .wrapper {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 100%;
+      max-width: 90%;
+      margin: s.f-unit-light(10vmax) auto 0;
+
+      @include s.media-breakpoint-up(sm){
+        margin: s.f-unit-light(5vmax) auto 0;
+      }
+
+      //border: 1px solid #000;
+
+      @include s.media-breakpoint-up(xl) {
+        max-width: 80rem;
+      }
+
+      @include s.media-breakpoint-up(xxl) {
+        margin-top: 0;
+      }
+
+      @include s.media-breakpoint-up(xxl) {
+        max-width: 85rem;
+      }
+
+      & :global {
+        .Mui-checked {
+          svg {
+            border: 1px solid s.$clrs-accent;
+          }
+        }
+      }
+
+      .hero_about {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        padding: 0 1rem;
+        //margin-top: -5rem;
+        color: white;
+
+        & > * {
+           text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+
+        //border: 1px solid red;
+
+        @include s.media-breakpoint-up(sm){
+          padding: 0 5rem;
+        }
+      }
+
+      .search_form {
+        position: relative;
+        background-color: rgba(250, 245, 242, 0.87);
+        backdrop-filter: blur(4px);
+        border-radius: 2rem;
+        margin: 2rem auto 0;
+        padding: 2rem 4rem;
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+        width: 100%;
+        box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
+
+        //border: 1px solid red;
+
+
+        @include s.media-breakpoint-up(xxl) {
+          padding: 2rem 6rem;
+        }
+
+        header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: calc(100% + 2rem);
+          margin-left: -1rem;
+
+          //border: 1px solid red;
+
+          @include s.media-breakpoint-up(sm){
+            width: 100%;
+          }
+
+          .bus_field {
+            //border: 1px solid red;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+            max-width: 12rem;
+            margin-left: auto;
+
+            @include s.media-breakpoint-up(sm){
+              max-width: 15rem;
+            }
+          }
+        }
+
+        .filed_hor {
+          display: flex;
+          align-items: center;
+          gap: 0.7rem;
+          width: 100%;
+          //border: 1px solid red;
+        }
+
+        .booking_form {
+          position: relative;
+          display: flex;
+          gap: 1rem;
+          flex: 1;
+          margin-top: .3rem;
+
+          //border: 1px solid blue;
+
+          & :global {
+            .MuiStack-root {
+              width: 100%;
+            }
+          }
+
+          .location_ver {
+            display: flex;
+            flex-flow: column;
+            gap: 1rem;
+          }
+
+          h6 {
+            font-weight: bolder;
+            margin-bottom: -.2vmax;
+            margin-top: s.f-unit-light(-.5rem);
+          }
+        }
+
+
+        .booking_form_container {
+          display: flex;
+          width: 100%;
+          gap: 1.5rem;
+          justify-content: space-between;
+          flex-flow: column;
+          //border: 1px solid red;
+
+          @include s.media-breakpoint-up(sm){
+            flex-flow: row;
+            gap: 3rem;
+          }
+
+          @include s.media-breakpoint-up(xxl) {
+            gap: 4rem;
+          }
+
+          .custom_divider {
+            place-items: center;
+            //border: 1px solid red;
+            display: none;
+
+            @include s.media-breakpoint-up(sm){
+              display: grid;
+            }
+
+            .divider_custom {
+              height: 100%;
+            }
+
+            .swap_location {
+              position: absolute;
+              //align-self: center;
+              //margin-top: 4rem;
+              //transform: rotate(90deg);
+              grid-column: 1/ -1;
+              border: thin solid lightgray;
+              background-color: white;
+            }
+          }
+
+          .hero_booking_divider {
+            border-right-width: thin;
+            border-style: dashed;
+            height: auto;
+            //margin: auto;
+            border-color: #b0b0b0;
+            display: none;
+
+            @include s.media-breakpoint-up(sm){
+              display: block;
+            }
+          }
+
+          .ver {
+            flex: 1;
+            display: flex;
+            flex-flow: column;
+            gap: 2rem;
+          }
+        }
+      }
+
+      .ss_err_msg {
+        position: absolute;
+        left: 0;
+        //top: -2rem;
+        bottom: 0;
+
+        //top: -100%;
+        //border: 1px solid red;
+        color: red;
+        background-color: rgba(255, 0, 0, 0.11);
+        margin-right: auto;
+        max-width: 100%;
+        //width: 100%;
+        visibility: hidden;
+        font-weight: bolder;
+
+        &.visible {
+          visibility: visible;
+        }
+
+        span {
+          font-size: 0.9rem;
+        }
+      }
+
+      .control {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+        margin-left: auto;
+        width: 100%;
+      }
+
+      .book_now_btn {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        max-width: 11rem;
+        width: 100%;
+        margin-left: auto;
+        margin-top: 2rem;
+
+        p {
+          font-size: 1.3rem;
+        }
+
+        h6 {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}

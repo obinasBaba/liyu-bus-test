@@ -1,0 +1,37 @@
+.sc_container {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  //border: 1px solid blue;
+
+  & :local {
+    .accordion {
+      border-bottom-left-radius: 1.2rem !important;
+      border-bottom-right-radius: 1.2rem !important;
+      overflow: hidden;
+      //border: 1px solid red;
+
+      &.acc_expanded {
+        overflow: initial;
+      }
+    }
+
+    .sc_as {
+      background-color: rgba(246, 211, 189, 0.3);
+      //border: 1px solid red;
+      //padding: 0 !important;
+
+      & > :first-child {
+        margin: 0;
+      }
+    }
+
+    .sc_accordion_details {
+      background-color: rgba(246, 211, 189, 1);
+      border-bottom-left-radius: 1.2rem;
+      border-bottom-right-radius: 1.2rem;
+    }
+  }
+}

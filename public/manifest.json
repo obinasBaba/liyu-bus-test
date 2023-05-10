@@ -1,0 +1,25 @@
+{
+  "short_name": "Liyu Bus",
+  "name": "Liyu Bus",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "bus192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "bus512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#e74f00",
+  "background_color": "#ffffff"
+}

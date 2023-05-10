@@ -1,0 +1,29 @@
+.filters--container {
+  display: flex;
+  width: 100%;
+  /*height: 80px;*/
+  /*background-color: black;*/
+  /*border: 1px solid black;*/
+  border-radius: 10%;
+  margin-bottom: 1rem;
+}
+
+.filter {
+  flex: 1;
+  border-right: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filter:hover {
+  background-color: #f25805;
+  color: white;
+}
+
+.active {
+  background-color: #ff6b1b;
+  color: white;
+}

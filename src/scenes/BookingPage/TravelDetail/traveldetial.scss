@@ -1,0 +1,12 @@
+.td_container {
+  margin: 3rem auto 0;
+  max-width: 1500px;
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+
+  .td_pdetail {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+}

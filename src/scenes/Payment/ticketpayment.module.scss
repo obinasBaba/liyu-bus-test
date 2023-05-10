@@ -1,0 +1,129 @@
+@use '../../styles/index' as s;
+
+.container {
+  margin-top: 10vmax;
+  min-height: 110vh;
+
+  //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  //display: grid;
+  //place-items: center;
+
+  //border: 1px solid red;
+
+  & :local {
+
+    .booking_detail{
+      max-width: 60rem;
+      padding: 1rem;
+
+      //border: 1px solid red;
+
+      .card{
+        padding: 1rem;
+        //border: 1px solid red;
+        background-color: #fafafa;
+
+        .counter {
+          //margin-top: 5rem;
+          width: max-content;
+          padding: .5rem;
+          font-size: 1.5rem;
+        }
+      }
+
+    }
+
+
+    .wrapper {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      width: 100%;
+      max-width: 90rem;
+      margin: 0 auto;
+      //gap: 3rem;
+
+      //border: 1px solid red;
+
+      .alert {
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+
+
+
+      .payment_card {
+        display: flex;
+        flex-flow: column;
+        //align-items: center;
+        //justify-content: center;
+        gap: 1rem;
+        margin-top: 4rem;
+        //border: 1px solid red;
+
+
+        //border: 1px solid red;
+
+        .methods {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          place-items: center;
+          width: 100%;
+          //max-width: 60rem;
+          margin: 0 auto;
+
+
+          //border: 1px solid red;
+
+          .method {
+            cursor: pointer;
+            align-items: center;
+            padding: .5rem 1rem;
+
+            &.checked {
+              background-color: rgba(231, 79, 0, 0.21);
+
+              img{
+                border: 3px solid rgba(255, 0, 0, 0.34);
+              }
+            }
+
+            img {
+              aspect-ratio: 1/1;
+              max-width: 5rem;
+              object-fit: cover;
+              //border: 1px solid red;
+              border-radius: 50%;
+              overflow: hidden;
+            }
+
+
+          }
+
+          //border: 1px solid red;
+
+          button {
+            scale: 1.2;
+
+            img {
+              aspect-ratio: 1/1;
+              max-width: 6rem;
+              object-fit: cover;
+              border-radius: 50%;
+              overflow: hidden;
+              padding: 0.5rem;
+
+
+            }
+          }
+        }
+
+        .proceed_btn {
+          max-width: 15rem;
+          //margin: 7rem auto 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1350.807" height="140" viewBox="0 0 1350.807 140">
+  <g id="Group_45" data-name="Group 45" transform="translate(-277 -356)">
+    <text id="GO" transform="translate(1472.807 461)" fill="#fff" font-size="100"  font-weight="700"><tspan x="0" y="0">GO</tspan></text>
+    <path id="Icon_material-navigate-next" data-name="Icon material-navigate-next" d="M19.622,9l-6.737,6.737,21.882,21.93L12.885,59.6l6.737,6.737L48.288,37.667Z" transform="translate(1317.518 388)" fill="#ff6b1b"/>
+    <text id="BOOK" transform="translate(930.403 461)" fill="#fff" font-size="100"  font-weight="700"><tspan x="0" y="0">BOOK</tspan></text>
+    <path id="Icon_material-navigate-next-2" data-name="Icon material-navigate-next" d="M19.622,9l-6.737,6.737,21.882,21.93L12.885,59.6l6.737,6.737L48.288,37.667Z" transform="translate(775.115 388)" fill="#ff6b1b"/>
+    <text id="SEARCH" transform="translate(277 461)" fill="#fff" font-size="100" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">SEARCH</tspan></text>
+  </g>
+</svg>

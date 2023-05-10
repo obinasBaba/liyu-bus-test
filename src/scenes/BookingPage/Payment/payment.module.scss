@@ -1,0 +1,74 @@
+.pay_container {
+  margin-top: 5rem;
+  display: grid;
+  //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  min-height: 20vmax;
+
+  //border: 1px solid red;
+
+  & :local {
+    .alert {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+
+    .counter {
+      margin-top: 3rem;
+      span {
+        font-size: 3rem;
+      }
+    }
+
+    .method {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      img {
+        aspect-ratio: 1/1;
+        max-width: 7rem;
+        object-fit: cover;
+        border: 1px solid red;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+
+    .pay_wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      place-items: center;
+      width: 100%;
+      max-width: 60rem;
+      margin: 4rem auto 0;
+      display: none;
+
+      //border: 1px solid red;
+
+      button {
+        scale: 1.2;
+
+        img {
+          aspect-ratio: 1/1;
+          max-width: 6rem;
+          object-fit: cover;
+          border-radius: 50%;
+          overflow: hidden;
+          padding: 0.5rem;
+
+          &.checked {
+            border: 3px solid rgba(255, 0, 0, 0.34);
+          }
+        }
+      }
+
+      img {
+        //object-fit: cover;
+        //height: 100%;
+      }
+    }
+  }
+}

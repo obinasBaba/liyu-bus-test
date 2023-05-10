@@ -1,0 +1,9 @@
+{
+  "departureLocation": "ADDIS ABABA, ETHIOPIA",
+  "arrivalLocation": "BAHIRDAR, ETHIOPIA",
+  "departureDate": "12-05-12",
+  "arrivalDate": "22-05-12",
+  "onBoardingLocation": "MESQEL SQUARE, ADDIS ABABA",
+  "offBoardingLocation": "BAHIRDAR MENAHERIYA",
+  "seatNumbers": [25, 26, 27]
+}

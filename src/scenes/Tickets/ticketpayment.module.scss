@@ -1,0 +1,56 @@
+@use '../../styles/index' as s;
+
+.container {
+  margin-top: 10vmax;
+  min-height: 110vh;
+
+  //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  //display: grid;
+  //place-items: center;
+
+  //border: 1px solid red;
+
+  & :local {
+
+    .booking_detail{
+      max-width: 60rem;
+      padding: 1rem;
+
+      //border: 1px solid red;
+
+      .card{
+        padding: 1rem;
+        //border: 1px solid red;
+        background-color: #fafafa;
+
+        .counter {
+          //margin-top: 5rem;
+          width: max-content;
+          padding: .5rem;
+          font-size: 1.5rem;
+        }
+      }
+
+    }
+
+
+    .wrapper {
+      //display: flex;
+      //flex-flow: column;
+      //align-items: center;
+      width: 100%;
+      max-width: 90rem;
+      margin: 0 auto;
+      //gap: 3rem;
+
+      //border: 1px solid red;
+
+      .alert {
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+
+
+    }
+  }
+}

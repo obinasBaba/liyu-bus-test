@@ -1,0 +1,111 @@
+@use '../../styles/index' as s;
+
+
+.container {
+  //border: 1px solid red;
+  position: relative;
+  border-top: 0.5px solid #eeeeee;
+  background-color: lighten(s.$clrs-accent, 54%);
+  padding: 1rem 2rem;
+
+  & :local {
+    .bg {
+      //bg-no-repeat bg-cover bg-center
+      position: absolute;
+      inset: 0;
+      //z-index: 11;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      pointer-events: none;
+    }
+
+    .wrapper {
+      max-width: 80rem;
+      margin: 0 auto 1rem;
+
+      .row_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        gap: 3rem;
+        justify-content: space-evenly;
+        //gap: 1rem;
+        margin: 3rem 0 4rem;
+
+        //border: 1px solid red;
+
+        @include s.media-breakpoint-up(sm) {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+        }
+
+
+      }
+
+      .row {
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+      }
+
+      .list {
+        display: flex;
+        flex-flow: column;
+        gap: 0.5rem;
+
+        // on hover animate underline from left to right
+        .list_item {
+          position: relative;
+          //border: 1px solid #000;
+          width: max-content;
+          color: #424242;
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            border-radius: 50000px;
+            background-color: s.$clrs-accent;
+            transition: width 0.3s ease-in-out;
+          }
+
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        //border: 1px solid #000;
+      }
+
+      .social {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        & > * {
+          &:hover {
+            svg {
+              fill: s.$clrs-accent;
+            }
+          }
+        }
+      }
+
+      hr {
+        //border-color:lighten(s.$clrs-accent, 34%) ;
+      }
+    }
+  }
+}

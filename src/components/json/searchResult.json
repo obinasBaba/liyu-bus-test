@@ -1,0 +1,159 @@
+[
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": false,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": false,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9],
+    "departureLocation": "searchResult",
+    "arrivalLocation": "BAHIRDAR, ETHIOPIA",
+    "departureDate": "12-05-12",
+    "arrivalDate": "22-05-12"
+  },
+  {
+    "busName": "ABAY BUS",
+    "departureTime": "12:00 AM",
+    "arrivalTime": "6:00 AM",
+    "totalTime": "06Hr 30Sec",
+    "price": "450",
+    "remainingSeats": "45",
+    "disabled": true,
+    "reservedSeats": [1, 2, 3, 4],
+    "occupiedSeats": [6, 7, 8, 9]
+  }
+]

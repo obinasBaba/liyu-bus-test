@@ -1,0 +1,67 @@
+{
+  "status": 0,
+  "message": "string",
+  "errorCode": "string",
+  "schedules": [
+    {
+      "uuid": "string",
+      "name": "string",
+      "route": {
+        "uuid": "string",
+        "name": "string",
+        "departureLocationName": "string",
+        "departureLocationUUId": "string",
+        "destinationLocationName": "string",
+        "destinationLocationUUId": "string",
+        "routeType": "REGULAR",
+        "distanceInKMAsphalt": 0,
+        "distanceInKMPista": 0,
+        "totalDistanceInKm": 0
+      },
+      "vehicleType": {
+        "uuid": "string",
+        "name": "string",
+        "description": "string",
+        "vehicleCategory": "BUS",
+        "properties": [
+          {
+            "id": 0,
+            "propertyName": "string",
+            "propertyValue": "string"
+          }
+        ]
+      },
+      "tariff": {
+        "id": "string",
+        "serviceProviderId": "string",
+        "serviceType": "CROSS_REGIONAL",
+        "amount": 0,
+        "timeFrom": "2022-12-12",
+        "timeTo": "2022-12-12",
+        "status": "INACTIVE",
+        "vehicleType": {
+          "uuid": "string",
+          "name": "string",
+          "description": "string",
+          "vehicleCategory": "BUS",
+          "properties": [
+            {
+              "id": 0,
+              "propertyName": "string",
+              "propertyValue": "string"
+            }
+          ]
+        }
+      },
+      "departureTime": "string",
+      "arrivalTime": "string",
+      "status": "INACTIVE",
+      "remark": "string",
+      "tariffId": "string",
+      "serviceType": "string",
+      "lineNumber": "string",
+      "price": 0,
+      "amountPerkm": 0
+    }
+  ]
+}

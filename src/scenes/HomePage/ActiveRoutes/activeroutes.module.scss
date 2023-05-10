@@ -1,0 +1,181 @@
+@use '../../../styles/index' as s;
+
+.ar_container {
+  position: relative;
+  color: black;
+  margin-top: 5vmax;
+  padding: 0 2rem;
+  //border: 1px solid red;
+
+  @include s.media-breakpoint-up(sm){
+    margin-top: 0;
+  }
+
+
+  & :local {
+    .paths_effect {
+      position: absolute;
+      display: block;
+      //width: 50rem;
+      //height: 50rem;
+      inset: 0;
+      border-radius: 30%;
+      left: 0;
+      bottom: 0;
+      background-size: cover;
+      opacity: 0.7;
+      //z-index: 11;
+    }
+
+    //background-color: gray;
+
+    .ar_wrapper {
+      position: relative;
+      //border: 3px solid red;
+      margin: 0 auto;
+      padding: 1rem 0 1rem 0;
+      //max-width: 70rem;
+      //max-width: 1500px;
+
+      //border: 1px solid red;
+
+      @include s.media-breakpoint-up(1500px) {
+        max-width: 90rem;
+      }
+
+      header {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column;
+        max-width: max-content;
+        //gap: 1rem;
+
+        & > :last-child{
+          font-size: 1.35rem;
+        }
+
+        .ar_title {
+          font-weight: 900;
+          //border: 1px solid red;
+
+
+        }
+      }
+    }
+
+    .ar_route_list {
+      position: relative;
+      display: grid;
+      place-items: center;
+      // responsive grid
+      grid-template-columns: repeat(auto-fill, minmax(22rem, auto));
+      //justify-content: space-evenly;
+      gap: 1rem;
+      margin: 2rem auto 0;
+      //max-width: 90%;
+      min-height: 20rem;
+      width: 100%;
+
+      //max-width: 1400px;
+      //border: 1px solid red;
+
+
+      .ar_loading{
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: max-content;
+      }
+
+      .ar_route_card {
+        background-color: #fffcfc;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 100%;
+        //max-width: 25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        scale: 0.9;
+        //box-shadow: 0 3px 3px -3px rgb(0 0 0 / 4%),
+        //  0px 5px 7px 1px rgb(0 0 0 / 4%), 0px 3px 12px 3px rgb(0 0 0 / 4%);
+        cursor: pointer;
+
+        //border: 1px solid yellow;
+
+        &:hover {
+          background-color: rgba(231, 79, 0, 0.12);
+        }
+      }
+
+      .route {
+        display: flex;
+        gap: 0.5rem;
+        width: 100%;
+
+        //border: 1px solid red;
+
+        .chip{
+          width: 30.333333%;
+          //border: 1px solid rebeccapurple;
+
+
+          span {
+            margin-left: auto;
+            display: block;
+            width: 100%;
+            text-align: center;
+            //border: 1px solid red;
+          }
+
+        }
+
+        .line {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          //width: 33.333333%;
+
+          //border: 1px solid red;
+
+          //give the second child flex-1
+          & > :nth-child(2) {
+            flex: 1;
+            height: 2px;
+            background-color: lightgray;
+            width: 100%;
+            margin-left: 0.3rem;
+          }
+        }
+
+        & :global {
+          .MuiChip-root {
+            justify-content: flex-start;
+            //padding: 0.2rem;
+            height: auto;
+            border-radius: 0.5rem !important;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      //border: 1px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4rem;
+
+      display: none;
+    }
+
+    .banner {
+      border: 1px solid red;
+    }
+  }
+}

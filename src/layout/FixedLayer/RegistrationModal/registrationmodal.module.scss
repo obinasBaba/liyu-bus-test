@@ -1,0 +1,168 @@
+@use './src/styles/index' as s;
+
+
+.container {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: auto;
+  display: flex;
+
+  // @include s.margin(top, 10rem);
+  // @include s.padding(bottom, 8rem);
+
+  & :local {
+
+    .art {
+      position: relative;
+      width: 43%;
+      min-height: 31vmax;
+      height: auto;
+      display: grid;
+      place-items: center;
+      //border: 1px solid red;
+      background-color: rgba(245, 141, 87, 0.11);
+
+      img{
+        //height: 100%;
+        object-fit: cover;
+        width: 80%;
+        margin-top: auto;
+      }
+
+
+      .text {
+        //position: absolute;
+        margin: 3rem 0 0 .5rem;
+        top: 0;
+        padding: 1.5rem;
+        color: gray;
+        overflow: hidden;
+        justify-self: start;
+        //border: 1px solid red;
+
+        h3 {
+          font-weight: 300;
+        }
+
+        span {
+          font-weight: 900;
+          color: s.$clrs-orange;
+          display: block;
+          line-height: 110%;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+  }
+
+  & :global {
+
+    .blur {
+      position: absolute;
+      inset: 0;
+      backdrop-filter: blur(5.5px);
+      z-index: -1;
+    }
+
+    .signup_wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+      max-width: 53rem;
+      max-height: 40vmax;
+      background-color: white;
+      overflow: hidden;
+      border-radius: 1.3rem;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+
+      //border: thin solid yellow;
+
+      .close_cross {
+        position: absolute;
+        z-index: 2;
+        right: 5%;
+        top: 5%;
+        max-width: 1rem;
+        background: none;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+      }
+
+
+      form {
+        width: 57%;
+        padding: 2rem 3.5rem 3rem;
+        display: flex;
+        flex-flow: column;
+        //justify-content: center;
+        align-self: stretch;
+        align-items: center;
+        gap: 1.5rem;
+        text-align: center;
+        overflow: hidden;
+
+
+        & > * {
+          width: 100%;
+        }
+
+        .MuiInputBase-root {
+          border-radius: .7rem;
+        }
+
+        .hor {
+          display: flex;
+          gap: 1rem;
+
+          & > * {
+            flex: 1;
+          }
+        }
+
+        button.forgot {
+          background-color: rgba(253, 127, 40, 0.04);
+        }
+
+
+        label.MuiInputLabel-formControl.MuiInputLabel-animated {
+          font-size: .91rem;
+        }
+
+        .title {
+          //margin-bottom: .2rem;
+        }
+
+        .title + * {
+          margin-top: 1rem;
+          display: block;
+        }
+
+        .divider {
+          display: grid;
+          place-items: center;
+          margin: 2rem 0 1rem;
+          width: 105%;
+
+          .line {
+            width: 100%;
+            height: 1px;
+            background-color: lightgrey;
+          }
+
+          .or {
+            position: absolute;
+            padding: 0 .5rem;
+            background-color: white;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

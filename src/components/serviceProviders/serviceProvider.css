@@ -1,0 +1,13 @@
+.provider-image {
+  height: 300px;
+  width: 350px;
+}
+
+.provider-image img {
+  width: 100%;
+  height: 100%;
+}
+
+#serviceProviders ::-webkit-scrollbar {
+  display: none;
+}

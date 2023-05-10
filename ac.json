@@ -1,0 +1,162 @@
+[
+  {
+    "uuid": null,
+    "name": "Addis Ababa - Adama",
+    "departure": {
+      "uuid": "aa8e3b39-cf91-4d8b-85b3-96bfadd9da54",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Adama",
+      "addressDescription": "Adama",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Addis Ababa-Bahir Dar",
+    "departure": {
+      "uuid": "aa8e3b39-cf91-4d8b-85b3-96bfadd9da54",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Bahir Dar",
+      "addressDescription": "Bahir Dar",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Bahir Dar-Addis Ababa",
+    "departure": {
+      "uuid": "e1d30b6c-617f-44f5-bcf7-5e1d070f1e70",
+      "addressDescription": "Bahir Dar",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Addis Ababa",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Addis Ababa-Jimma",
+    "departure": {
+      "uuid": "aa8e3b39-cf91-4d8b-85b3-96bfadd9da54",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Jimma",
+      "addressDescription": "Jimma",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Jimma-Addis Ababa",
+    "departure": {
+      "uuid": "7c623505-bf0b-497e-bdb8-8977be7fce0e",
+      "addressDescription": "Jimma",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Addis Ababa",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Addis Ababa-Dire Dawa",
+    "departure": {
+      "uuid": "aa8e3b39-cf91-4d8b-85b3-96bfadd9da54",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Dire Dawa",
+      "addressDescription": "Dire Dawa",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Dire Dawa-Addis Ababa",
+    "departure": {
+      "uuid": "28719dec-f4c6-4119-9670-f780a934ea5d",
+      "addressDescription": "Dire Dawa",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Addis Ababa",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Addis Ababa - Harar",
+    "departure": {
+      "uuid": "aa8e3b39-cf91-4d8b-85b3-96bfadd9da54",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Harar",
+      "addressDescription": "Harar",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Addis Ababa - Hwassa",
+    "departure": {
+      "uuid": "aa8e3b39-cf91-4d8b-85b3-96bfadd9da54",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Hwassa",
+      "addressDescription": "Hwassa",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  },
+  {
+    "uuid": null,
+    "name": "Addis Ababa - Metu",
+    "departure": {
+      "uuid": "aa8e3b39-cf91-4d8b-85b3-96bfadd9da54",
+      "addressDescription": "Addis Ababa",
+      "name": null
+    },
+    "destination": {
+      "uuid": "Metu",
+      "addressDescription": "Metu",
+      "name": null
+    },
+    "routeType": null,
+    "distanceInKM": 0.0
+  }
+]
