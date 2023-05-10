@@ -19,8 +19,6 @@
   }
 
   & :local {
-
-
     .toolbar {
       display: flex;
       padding: 1rem 5rem;
@@ -29,7 +27,6 @@
       margin: 0 auto;
 
       //border: 1px solid red;
-
 
       //border: 1px solid red;
 
@@ -47,7 +44,6 @@
 
       & :local {
         .nav_item {
-
           &.active {
             color: s.$clrs-accent;
             text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.17);
@@ -81,9 +77,7 @@
                 width: 100%;
                 transition: width 0.2s ease-in-out;
               }
-
             }
-
           }
         }
       }

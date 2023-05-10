@@ -1,6 +1,5 @@
 @use './src/styles/index' as s;
 
-
 .sd_container {
   width: 100%;
 
@@ -15,7 +14,7 @@
 
       //border: 1px solid red;
 
-      @include s.media-breakpoint-up(sm){
+      @include s.media-breakpoint-up(sm) {
         flex-flow: row;
         gap: 2rem;
       }
@@ -93,8 +92,7 @@
 
       //border: 1px solid red;
 
-
-      @include s.media-breakpoint-up(sm){
+      @include s.media-breakpoint-up(sm) {
         flex-flow: column;
         max-width: 18rem;
       }
@@ -103,7 +101,7 @@
         font-weight: 400;
         //font-size: 1.2rem;
 
-        @include s.media-breakpoint-up(sm){
+        @include s.media-breakpoint-up(sm) {
           font-weight: 600;
           font-size: 1.2rem;
         }

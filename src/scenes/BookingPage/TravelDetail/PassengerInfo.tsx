@@ -18,7 +18,7 @@ import {
 import { BookingStepFormValue } from '../types';
 import { matchIsValidTel, MuiTelInput } from 'mui-tel-input';
 
-const genders = ['Male', 'Female'];
+export const genders = ['Male', 'Female'];
 
 const PassengerInfo = ({
   setPassengersDetails,
@@ -192,10 +192,7 @@ const PassengerInfo = ({
             />
           </div>
           <div className="w-full">
-            <FormControl
-              required
-              fullWidth
-            >
+            <FormControl required fullWidth>
               <InputLabel sx={{ backgroundColor: 'white', padding: '0 .2rem' }}>
                 Gender
               </InputLabel>

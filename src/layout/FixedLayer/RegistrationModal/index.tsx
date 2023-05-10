@@ -1,7 +1,16 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import s from './registrationmodal.module.scss';
 
-import { Button, IconButton, InputAdornment, TextField } from '@mui/material';
+import {
+  Button,
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  IconButton,
+  InputAdornment,
+  SelectChangeEvent,
+  TextField,
+} from '@mui/material';
 import {
   AnimatePresence,
   LayoutGroup,
@@ -17,8 +26,17 @@ import { Img } from 'react-image';
 import { useAppContext } from '../../../components/context/AppContext';
 import Typography from '@mui/material/Typography';
 import { matchIsValidTel, MuiTelInput } from 'mui-tel-input';
-import { Password, Person, Phone, Visibility } from '@mui/icons-material';
+import {
+  Password,
+  Person,
+  Phone,
+  SensorOccupied,
+  Visibility,
+} from '@mui/icons-material';
 import * as Yup from 'yup';
+import { useMutation } from '@tanstack/react-query';
+import { toast } from 'react-toastify';
+import { mutationFn } from '../../../actions/auth';
 
 const imgVariant = {
   initial: {
@@ -149,15 +167,15 @@ const yupSchema = Yup.object({
     .min(3, 'last name must be at least 3 characters')
     .max(13, 'first name can not be more than 13 characters')
     .matches(/^[a-zA-Z]+$/, 'First name must be only letters'),
-  phone: Yup.number().required('Phone is required').integer(),
- /* password: Yup.string()
+  phone: Yup.number()
+    .required('Phone is required')
+    .integer() /* password: Yup.string()
     .required('password is required')
     .min(8, 'password must be at least 3 characters')
-    .max(10, 'password can not be more than 13 characters'),*/
-  /*confirmPassword: Yup.string()
+    .max(10, 'password can not be more than 13 characters'),*/ /*confirmPassword: Yup.string()
     .required('password is required')
     .min(8, 'password must be at least 3 characters')
-    .max(10, 'password can not be more than 13 characters'),*/
+    .max(10, 'password can not be more than 13 characters'),*/,
 });
 
 const RegistrationModal = () => {
@@ -172,24 +190,28 @@ const RegistrationModal = () => {
   const { data: session } = useSession();
   const control = useAnimation();
 
-  useEffect(() => {
-    if (session) {
-      setTimeout(() => {
-        setValues({
-          email: session.user?.email,
-          password: session.expires,
-        });
-      }, 500);
-    }
-  }, [session]);
+  const [age, setAge] = React.useState('');
+
+  const handleChange = (event: SelectChangeEvent) => {
+    setAge(event.target.value as string);
+  };
+
+  const auth = useMutation({
+    mutationFn,
+    async onSuccess(signInResponse) {
+      console.log('signInResponse : ', signInResponse);
+    },
+    onError(err) {
+      console.log('err: ', err);
+      toast.error('Something went wrong,try again later');
+    },
+  });
 
   useEffect(() => {
     if (signUp) {
       setValidationSchema(yupSchema);
     } else {
-      setValidationSchema(
-        yupSchema.omit(['firstName', 'lastName']),
-      );
+      setValidationSchema(yupSchema.omit(['firstName', 'lastName']));
     }
   }, [signUp]);
 
@@ -199,16 +221,22 @@ const RegistrationModal = () => {
     validateOnChange: false,
     validateOnMount: false,
     initialValues: {
-      phone: values.email,
-      password: values.password,
+      phone: '',
+      password: '',
       confirmPassword: '',
       firstName: '',
       lastName: '',
+      age: '',
+      gender: '',
     },
     onSubmit(value) {
-
-
-      console.log('onsubmit: ', value);
+      auth.mutate({
+        password: value.password,
+        fullName: `${value.firstName} ${value.lastName}`,
+        phoneNumber: value.phone,
+        age: Number(value.age),
+        gender: value.gender,
+      });
     },
   });
 
@@ -282,65 +310,107 @@ const RegistrationModal = () => {
               </motion.div>
               <AnimatePresence mode="sync">
                 {signUp && (
-                  <motion.div
-                    variants={basicVariants}
-                    inherit={false}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    className="hor"
-                    layout
-                  >
-                    <TextField
-                      required
-                      name="firstName"
-                      label="First name"
-                      type="text"
-                      variant="outlined"
-                      value={formik.values.firstName}
-                      onChange={formik.handleChange}
-                      error={Boolean(
-                        Array.isArray(formik.errors.firstName) &&
-                          (formik.errors.firstName as any),
-                      )}
-                      helperText={
-                        formik.errors.firstName &&
-                        (formik.errors.firstName as any)
-                      }
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <Person />
-                          </InputAdornment>
-                        ),
-                      }}
-                    />
+                  <>
+                    <motion.div
+                      variants={basicVariants}
+                      inherit={false}
+                      initial="initial"
+                      animate="animate"
+                      exit="exit"
+                      className="hor"
+                      layout
+                    >
+                      <TextField
+                        required
+                        name="firstName"
+                        label="First name"
+                        type="text"
+                        variant="outlined"
+                        value={formik.values.firstName}
+                        onChange={formik.handleChange}
+                        error={Boolean(
+                          Array.isArray(formik.errors.firstName) &&
+                            (formik.errors.firstName as any),
+                        )}
+                        helperText={
+                          formik.errors.firstName &&
+                          (formik.errors.firstName as any)
+                        }
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              <Person />
+                            </InputAdornment>
+                          ),
+                        }}
+                      />
 
-                    <TextField
-                      required
-                      name="lastName"
-                      label="Last name"
-                      type="text"
-                      variant="outlined"
-                      value={formik.values.lastName}
-                      onChange={formik.handleChange}
-                      error={Boolean(
-                        Array.isArray(formik.errors.lastName) &&
-                          (formik.errors.lastName as any),
-                      )}
-                      helperText={
-                        formik.errors.lastName &&
-                        (formik.errors.lastName as any)
-                      }
-                      InputProps={{
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <Person />
-                          </InputAdornment>
-                        ),
-                      }}
-                    />
-                  </motion.div>
+                      <TextField
+                        required
+                        name="lastName"
+                        label="Last name"
+                        type="text"
+                        variant="outlined"
+                        value={formik.values.lastName}
+                        onChange={formik.handleChange}
+                        error={Boolean(
+                          Array.isArray(formik.errors.lastName) &&
+                            (formik.errors.lastName as any),
+                        )}
+                        helperText={
+                          formik.errors.lastName &&
+                          (formik.errors.lastName as any)
+                        }
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              <Person />
+                            </InputAdornment>
+                          ),
+                        }}
+                      />
+                    </motion.div>
+
+                    <motion.div
+                      variants={basicVariants}
+                      inherit={false}
+                      initial="initial"
+                      animate="animate"
+                      exit="exit"
+                      className="hor"
+                      layout
+                    >
+                      <TextField
+                        required
+                        label="Age"
+                        name="age"
+                        onChange={formik.handleChange}
+                        value={formik.values.age}
+                        error={Boolean(formik.errors.age)}
+                        helperText={formik.errors.age}
+                        type="number"
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              <SensorOccupied />
+                            </InputAdornment>
+                          ),
+                        }}
+                      />
+
+                      <FormGroup>
+                        <FormControlLabel
+                          control={<Checkbox defaultChecked />}
+                          label="Label"
+                        />
+                        <FormControlLabel
+                          required
+                          control={<Checkbox />}
+                          label="Required"
+                        />
+                      </FormGroup>
+                    </motion.div>
+                  </>
                 )}
               </AnimatePresence>
               <motion.div layout>

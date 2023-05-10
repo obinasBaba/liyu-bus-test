@@ -10,7 +10,6 @@
 
   //border: 1px solid red;
 
-
   &::after {
     content: '';
     position: absolute;
@@ -20,7 +19,6 @@
     width: 100%;
     height: 100%;
   }
-
 
   .bg2 {
     position: absolute;
@@ -34,8 +32,8 @@
     z-index: -1;
     //border: 1px solid red;
 
-    @include s.media-breakpoint-up(sm){
-      height: 38vmin
+    @include s.media-breakpoint-up(sm) {
+      height: 38vmin;
     }
   }
 
@@ -50,7 +48,7 @@
       max-width: 90%;
       margin: s.f-unit-light(10vmax) auto 0;
 
-      @include s.media-breakpoint-up(sm){
+      @include s.media-breakpoint-up(sm) {
         margin: s.f-unit-light(5vmax) auto 0;
       }
 
@@ -85,21 +83,20 @@
         color: white;
 
         & > * {
-           text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
-
 
         //border: 1px solid red;
 
-        @include s.media-breakpoint-up(sm){
+        @include s.media-breakpoint-up(sm) {
           padding: 0 5rem;
         }
       }
 
       .search_form {
         position: relative;
-        background-color: rgba(250, 245, 242, 0.87);
-        backdrop-filter: blur(4px);
+        background-color: rgba(250, 245, 242, 0.27);
+        backdrop-filter: blur(10px);
         border-radius: 2rem;
         margin: 2rem auto 0;
         padding: 2rem 4rem;
@@ -109,8 +106,7 @@
         width: 100%;
         box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
 
-        //border: 1px solid red;
-
+        border: 1px solid rgba(255, 255, 255, 0.43);
 
         @include s.media-breakpoint-up(xxl) {
           padding: 2rem 6rem;
@@ -125,7 +121,7 @@
 
           //border: 1px solid red;
 
-          @include s.media-breakpoint-up(sm){
+          @include s.media-breakpoint-up(sm) {
             width: 100%;
           }
 
@@ -138,7 +134,7 @@
             max-width: 12rem;
             margin-left: auto;
 
-            @include s.media-breakpoint-up(sm){
+            @include s.media-breakpoint-up(sm) {
               max-width: 15rem;
             }
           }
@@ -157,7 +153,7 @@
           display: flex;
           gap: 1rem;
           flex: 1;
-          margin-top: .3rem;
+          margin-top: 0.3rem;
 
           //border: 1px solid blue;
 
@@ -175,11 +171,10 @@
 
           h6 {
             font-weight: bolder;
-            margin-bottom: -.2vmax;
-            margin-top: s.f-unit-light(-.5rem);
+            margin-bottom: -0.2vmax;
+            margin-top: s.f-unit-light(-0.5rem);
           }
         }
-
 
         .booking_form_container {
           display: flex;
@@ -189,7 +184,7 @@
           flex-flow: column;
           //border: 1px solid red;
 
-          @include s.media-breakpoint-up(sm){
+          @include s.media-breakpoint-up(sm) {
             flex-flow: row;
             gap: 3rem;
           }
@@ -203,7 +198,7 @@
             //border: 1px solid red;
             display: none;
 
-            @include s.media-breakpoint-up(sm){
+            @include s.media-breakpoint-up(sm) {
               display: grid;
             }
 
@@ -230,7 +225,7 @@
             border-color: #b0b0b0;
             display: none;
 
-            @include s.media-breakpoint-up(sm){
+            @include s.media-breakpoint-up(sm) {
               display: block;
             }
           }

@@ -7,10 +7,9 @@
   padding: 0 2rem;
   //border: 1px solid red;
 
-  @include s.media-breakpoint-up(sm){
+  @include s.media-breakpoint-up(sm) {
     margin-top: 0;
   }
-
 
   & :local {
     .paths_effect {
@@ -50,15 +49,13 @@
         max-width: max-content;
         //gap: 1rem;
 
-        & > :last-child{
+        & > :last-child {
           font-size: 1.35rem;
         }
 
         .ar_title {
           font-weight: 900;
           //border: 1px solid red;
-
-
         }
       }
     }
@@ -79,8 +76,7 @@
       //max-width: 1400px;
       //border: 1px solid red;
 
-
-      .ar_loading{
+      .ar_loading {
         margin: 0 auto;
         position: absolute;
         top: 50%;
@@ -118,10 +114,9 @@
 
         //border: 1px solid red;
 
-        .chip{
+        .chip {
           width: 30.333333%;
           //border: 1px solid rebeccapurple;
-
 
           span {
             margin-left: auto;
@@ -130,7 +125,6 @@
             text-align: center;
             //border: 1px solid red;
           }
-
         }
 
         .line {

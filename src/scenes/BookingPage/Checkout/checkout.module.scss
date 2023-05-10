@@ -5,7 +5,6 @@
   flex-flow: column;
   gap: 1.7rem;
 
-
   //border: 1px solid red;
 
   & :global {
@@ -91,7 +90,6 @@
 
           //border: 1px solid green;
 
-
           .card_content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -127,14 +125,12 @@
           //border: 1px solid red;
 
           .loc_name {
-
             & > :first-child {
               width: 30%;
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: nowrap;
             }
-
           }
         }
 

@@ -15,7 +15,6 @@
       //align-items: center;
       gap: 4rem;
 
-
       @include s.media-breakpoint-up(sm) {
         flex-flow: row;
         gap: 1rem;
@@ -158,7 +157,6 @@
           @include s.media-breakpoint-up(sm) {
             flex-flow: column;
           }
-
         }
 
         .selection_detail {
@@ -170,7 +168,6 @@
           .selection_detail_title {
           }
         }
-
 
         .btn_controller {
           position: relative;

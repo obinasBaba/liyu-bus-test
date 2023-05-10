@@ -8,7 +8,7 @@ import { Container } from '@mui/material';
 const AboutUs = () => {
   return (
     <div className={s.container}>
-      <Container maxWidth={'xl' as any} className={s.wrapper} >
+      <Container maxWidth={'xl' as any} className={s.wrapper}>
         <Intro />
         <TheTeam />
         <ContactForm />

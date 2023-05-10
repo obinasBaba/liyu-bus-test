@@ -117,7 +117,7 @@ const Checkout = ({}) => {
         </Alert>
       )}
 
-     {/* <Alert severity="info">
+      {/* <Alert severity="info">
         <AlertTitle>Note</AlertTitle>
         Please arrive at boarding place at least 15 minutes before the take-off
         time

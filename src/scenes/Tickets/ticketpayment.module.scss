@@ -11,14 +11,13 @@
   //border: 1px solid red;
 
   & :local {
-
-    .booking_detail{
+    .booking_detail {
       max-width: 60rem;
       padding: 1rem;
 
       //border: 1px solid red;
 
-      .card{
+      .card {
         padding: 1rem;
         //border: 1px solid red;
         background-color: #fafafa;
@@ -26,13 +25,11 @@
         .counter {
           //margin-top: 5rem;
           width: max-content;
-          padding: .5rem;
+          padding: 0.5rem;
           font-size: 1.5rem;
         }
       }
-
     }
-
 
     .wrapper {
       //display: flex;
@@ -49,8 +46,6 @@
         max-width: 40rem;
         margin: 0 auto;
       }
-
-
     }
   }
 }

@@ -1,5 +1,13 @@
 import {
-  Avatar, Chip, Divider, Stack, Step, StepLabel, Stepper, useMediaQuery, useTheme,
+  Avatar,
+  Chip,
+  Divider,
+  Stack,
+  Step,
+  StepLabel,
+  Stepper,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material';
 import { red } from '@mui/material/colors';
 import Typography from '@mui/material/Typography';
@@ -19,7 +27,6 @@ const DetailInformation = ({ details = [] }) => {
   // console.log('details: ', details);
   const theme = useTheme();
   const match = useMediaQuery(theme.breakpoints.up('sm'));
-
 
   return (
     <div className={s.route_detail}>
@@ -57,7 +64,7 @@ const DetailInformation = ({ details = [] }) => {
               </Stack>
             </header>
 
-            <Stack direction={match ? "row" : "column"} spacing={3}>
+            <Stack direction={match ? 'row' : 'column'} spacing={3}>
               <Stack spacing={1} width="100%" flex={0.8}>
                 <div className={s.rd_info_card}>
                   <Stepper orientation="vertical">
@@ -159,10 +166,10 @@ const DetailInformation = ({ details = [] }) => {
 
               <Stack
                 flex={0.3}
-                style={{ marginLeft: 0, padding: '1rem'}}
+                style={{ marginLeft: 0, padding: '1rem' }}
                 alignItems="center"
                 spacing={5}
-                direction={match ? "column" : "row"}
+                direction={match ? 'column' : 'row'}
               >
                 <div>
                   <Typography>Price Per Person :</Typography>
@@ -172,10 +179,7 @@ const DetailInformation = ({ details = [] }) => {
                   </Typography>
                 </div>
 
-                <Stack spacing={1}
-                       direction={match ? "column" : "row"}
-
-                >
+                <Stack spacing={1} direction={match ? 'column' : 'row'}>
                   <Chip
                     label={
                       <Typography

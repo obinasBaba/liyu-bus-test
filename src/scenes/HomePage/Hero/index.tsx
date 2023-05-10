@@ -417,7 +417,7 @@ const Hero = () => {
               <div className={s.booking_form}>
                 <CalendarMonth />
 
-                <Stack spacing={2} width="100%" >
+                <Stack spacing={2} width="100%">
                   <div>
                     <Typography variant="h6">Leaving on</Typography>
                     <Typography variant="caption" color="gray">

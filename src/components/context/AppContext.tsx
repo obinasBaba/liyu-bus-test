@@ -23,8 +23,6 @@ const AppContextProvider = ({ children }) => {
     onSuccess: () => null,
   });
 
-
-
   const value = useMemo(
     () => ({
       showModal,

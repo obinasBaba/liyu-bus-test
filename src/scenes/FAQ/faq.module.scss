@@ -1,40 +1,35 @@
 @use './src/styles/index' as s;
 
-.container{
+.container {
   width: 100%;
   margin: 8vmax;
-
 
   // @include s.margin(top, 10rem);
   // @include s.padding(bottom, 8rem);
 
-  & :local{
-
-    .wrapper{
-
-      header{
-        h3{
+  & :local {
+    .wrapper {
+      header {
+        h3 {
           line-height: 100%;
         }
       }
 
-
-      .questions{
+      .questions {
         margin-top: 5rem;
         //border: 1px solid red;
       }
 
-      hr{
+      hr {
         border-color: #727171;
       }
 
-
-      .accordion_container{
+      .accordion_container {
         max-width: 90%;
         width: 100%;
         margin-left: auto;
 
-        .a_summary{
+        .a_summary {
           background-color: rgba(231, 79, 0, 0.03);
         }
 

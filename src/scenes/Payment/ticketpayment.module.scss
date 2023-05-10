@@ -11,14 +11,13 @@
   //border: 1px solid red;
 
   & :local {
-
-    .booking_detail{
+    .booking_detail {
       max-width: 60rem;
       padding: 1rem;
 
       //border: 1px solid red;
 
-      .card{
+      .card {
         padding: 1rem;
         //border: 1px solid red;
         background-color: #fafafa;
@@ -26,13 +25,11 @@
         .counter {
           //margin-top: 5rem;
           width: max-content;
-          padding: .5rem;
+          padding: 0.5rem;
           font-size: 1.5rem;
         }
       }
-
     }
-
 
     .wrapper {
       display: flex;
@@ -50,8 +47,6 @@
         margin: 0 auto;
       }
 
-
-
       .payment_card {
         display: flex;
         flex-flow: column;
@@ -60,7 +55,6 @@
         gap: 1rem;
         margin-top: 4rem;
         //border: 1px solid red;
-
 
         //border: 1px solid red;
 
@@ -73,18 +67,17 @@
           //max-width: 60rem;
           margin: 0 auto;
 
-
           //border: 1px solid red;
 
           .method {
             cursor: pointer;
             align-items: center;
-            padding: .5rem 1rem;
+            padding: 0.5rem 1rem;
 
             &.checked {
               background-color: rgba(231, 79, 0, 0.21);
 
-              img{
+              img {
                 border: 3px solid rgba(255, 0, 0, 0.34);
               }
             }
@@ -97,8 +90,6 @@
               border-radius: 50%;
               overflow: hidden;
             }
-
-
           }
 
           //border: 1px solid red;
@@ -113,8 +104,6 @@
               border-radius: 50%;
               overflow: hidden;
               padding: 0.5rem;
-
-
             }
           }
         }

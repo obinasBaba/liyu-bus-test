@@ -57,11 +57,10 @@
       margin-left: -2rem;
       //border: 1px solid red;
 
-      @include s.media-breakpoint-up(sm){
+      @include s.media-breakpoint-up(sm) {
         width: 140%;
         margin-left: -20%;
       }
-
 
       @include s.media-breakpoint-up(1500px) {
         width: 100%;

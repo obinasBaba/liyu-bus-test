@@ -1,6 +1,6 @@
 @use './src/styles/index' as s;
 
-.container{
+.container {
   width: 100%;
   //max-width: 70rem;
   margin: 0 auto;
@@ -8,22 +8,20 @@
   // @include s.margin(top, 10rem);
   // @include s.padding(bottom, 8rem);
 
-  & :local{
-
-    header{
+  & :local {
+    header {
       margin: 1.5rem 0;
 
-      h3{
+      h3 {
         line-height: 100%;
       }
     }
 
-    .content{
+    .content {
       color: #464646;
     }
 
-    .wrapper{
-
+    .wrapper {
     }
   }
 }

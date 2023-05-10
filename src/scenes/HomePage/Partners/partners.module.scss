@@ -6,7 +6,7 @@
   padding: 0 0;
   margin-top: 2rem;
 
-  @include s.media-breakpoint-up(sm){
+  @include s.media-breakpoint-up(sm) {
     margin-top: 10rem;
   }
 

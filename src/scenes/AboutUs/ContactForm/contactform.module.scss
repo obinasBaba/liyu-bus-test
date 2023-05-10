@@ -1,31 +1,28 @@
 @use './src/styles/index' as s;
 
-.container{
+.container {
   width: 100%;
 
   // @include s.margin(top, 10rem);
   // @include s.padding(bottom, 8rem);
 
-  & :local{
-
-    header{
+  & :local {
+    header {
       margin: 2rem 0;
 
-      h3{
+      h3 {
         line-height: 100%;
       }
     }
 
-    .content{
-
-      button{
+    .content {
+      button {
         margin-top: 2rem;
         max-width: 15rem;
       }
     }
 
-    .wrapper{
-
+    .wrapper {
     }
   }
 }

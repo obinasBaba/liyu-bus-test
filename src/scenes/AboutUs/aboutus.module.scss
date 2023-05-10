@@ -1,6 +1,6 @@
 @use './src/styles/index' as s;
 
-.container{
+.container {
   width: 100%;
   min-height: 100vh;
   margin: 6vmax 0;
@@ -9,9 +9,8 @@
   // @include s.margin(top, 10rem);
   // @include s.padding(bottom, 8rem);
 
-  & :local{
-
-    .wrapper{
+  & :local {
+    .wrapper {
       display: flex;
       flex-flow: column;
       gap: 4rem;

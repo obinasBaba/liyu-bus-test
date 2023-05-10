@@ -1,6 +1,5 @@
 @use './src/styles/index' as s;
 
-
 .container {
   width: 100%;
   position: absolute;
@@ -13,7 +12,6 @@
   // @include s.padding(bottom, 8rem);
 
   & :local {
-
     .art {
       position: relative;
       width: 43%;
@@ -24,17 +22,16 @@
       //border: 1px solid red;
       background-color: rgba(245, 141, 87, 0.11);
 
-      img{
+      img {
         //height: 100%;
         object-fit: cover;
         width: 80%;
         margin-top: auto;
       }
 
-
       .text {
         //position: absolute;
-        margin: 3rem 0 0 .5rem;
+        margin: 3rem 0 0 0.5rem;
         top: 0;
         padding: 1.5rem;
         color: gray;
@@ -55,11 +52,9 @@
         }
       }
     }
-
   }
 
   & :global {
-
     .blur {
       position: absolute;
       inset: 0;
@@ -94,7 +89,6 @@
         cursor: pointer;
       }
 
-
       form {
         width: 57%;
         padding: 2rem 3.5rem 3rem;
@@ -107,13 +101,12 @@
         text-align: center;
         overflow: hidden;
 
-
         & > * {
           width: 100%;
         }
 
         .MuiInputBase-root {
-          border-radius: .7rem;
+          border-radius: 0.7rem;
         }
 
         .hor {
@@ -129,9 +122,8 @@
           background-color: rgba(253, 127, 40, 0.04);
         }
 
-
         label.MuiInputLabel-formControl.MuiInputLabel-animated {
-          font-size: .91rem;
+          font-size: 0.91rem;
         }
 
         .title {
@@ -157,7 +149,7 @@
 
           .or {
             position: absolute;
-            padding: 0 .5rem;
+            padding: 0 0.5rem;
             background-color: white;
             margin: 0;
           }

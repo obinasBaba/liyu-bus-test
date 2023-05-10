@@ -268,7 +268,6 @@ const BookingPage = () => {
     return <Navigate to="/" replace />;
   }
 
-
   return (
     <div className={s.bp_container}>
       <div className={clsx([s.bg, "bg-[url('/public/img/paths.png')]"])} />

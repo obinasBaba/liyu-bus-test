@@ -1,6 +1,5 @@
 @use '../../styles/index' as s;
 
-
 .container {
   //border: 1px solid red;
   position: relative;
@@ -39,8 +38,6 @@
           grid-template-columns: repeat(4, 1fr);
           gap: 2rem;
         }
-
-
       }
 
       .row {
@@ -81,7 +78,7 @@
         }
       }
 
-      .bottom{
+      .bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
