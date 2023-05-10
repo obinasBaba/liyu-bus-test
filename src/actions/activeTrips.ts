@@ -1,4 +1,5 @@
 import { QueryFunction, useQuery } from '@tanstack/react-query';
+import API from '../lib/API';
 
 type ActiveRoute = {
   uuid: string;
@@ -22,15 +23,11 @@ export enum QUERY_KEYS {
 }
 
 const getActiveTrips: QueryFunction<ActiveRoute[]> = async ({ queryKey }) => {
-  const res = await fetch(
-    'https://liyu-bus-api.dev.kifiya.et/liyu-bus-api/api/route/get-active-route',
-  );
+  const res = await API.get('/route/get-active-route');
 
-  const activeRoutes = await res.json();
+  console.log('getActiveTrips data ---- : ', res.data);
 
-  console.log('getActiveTrips data ---- : ', activeRoutes);
-
-  return activeRoutes;
+  return res.data;
 };
 
 const useActiveTrips = (
